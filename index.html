@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game of Life</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/sidebar.css"> 
+    <link rel="stylesheet" href="./styles/visualizer.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=ghost&color=C3BFBC" width="32" height="32" alt="blog"></a></li>
+            <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=github&color=C3BFBC" width="32" height="32" alt="github"></a></li>
+            <!-- <li><a href="#"><img src="https://s2.svgbox.net/social.svg?ic=wikipedia&color=C3BFBC" width="32" height="32" alt="learn more"></a></li> -->
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <header>
+                <h1>Game of Life</h1>
+            </header>
+            
+            <form>
+                <label for="framerate">Framerate</label>
+                <input id="framerate" type="range" class="slider" mix="5" max="10000" value="1000">
+                <p class="units1" >5 fps</p>
+
+                <label for="setting2">Setting 2</label>
+                <input id="setting3" type="range" class="slider">
+                <p class="units2">5 fps</p>
+
+                <label for="setting3">Setting 3</label>
+                <input id="setting3" type="range" class="slider">
+                <p class="units3">5 fps</p>
+            </form>
+
+            <a href="#">> Learn More</a>
+        </aside>
+        
+        <div class="game-container">
+            <div class="game-of-life"></div>
+        </div>
+    </main>
+
+</body>
+    <script src="./index.js"></script>
+</html>

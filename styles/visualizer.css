@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+/* background colors */
+/* main colors */
+/* text colors */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game-container {
+  background-color: #3b3b3b;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-of-life {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (15px)[65];
+      grid-template-columns: repeat(65, 15px);
+  -ms-grid-rows: (15px)[35];
+      grid-template-rows: repeat(35, 15px);
+  border: 1px solid white;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 auto 0 auto;
+}
+
+.cell {
+  height: 15px;
+  width: 15px;
+}
+
+.live {
+  background-color: #ce4433;
+}
+
+.dead {
+  background-color: #242424;
+}
+/*# sourceMappingURL=visualizer.css.map */

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+/* background colors */
+$color_1: #151515;
+$color_2: #242424;
+$color_3: #3b3b3b;
+
+/* main colors */
+$color_4: #39cec8;
+$color_5: #ce4433;
+
+/* text colors */
+$color_6: #3d99f5;
+$color_7: #ffffff;
+$color_8: #c3bfbc;
+$color_9: #a09d9a;
+
+$padding: 4em;
+$font1: "Poppins", sans-serif;
+$font2: "Lora", serif;
+$phone: 840px;
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color_1;
+  font-family: $font1;
+}
+
+nav {
+  margin: 2em 2em 0 2em;
+  //   border: 1px solid black;
+  //   display: grid;
+
+  ul {
+    // border: 1px solid black;
+    // justify-items: end;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  ul li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0 0 0 20px;
+  }
+
+  img {
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+  }
+}
+
+main {
+  padding: 0 2em 2em 2em;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}

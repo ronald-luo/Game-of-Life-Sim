@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+/* background colors */
+$color_1: #151515;
+$color_2: #242424;
+$color_3: #3b3b3b;
+
+/* main colors */
+$color_4: #39cec8;
+$color_5: #ce4433;
+
+/* text colors */
+$color_6: #3d99f5;
+$color_7: #ffffff;
+$color_8: #c3bfbc;
+$color_9: #a09d9a;
+
+$padding: 2em;
+$font1: "Montserrat", sans-serif;
+$font2: "Lora", serif;
+$phone: 840px;
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+aside {
+  padding: $padding;
+  background-color: $color_2;
+  height: 80vh;
+  font-family: $font2;
+
+  h1 {
+    font-family: $font1;
+    color: $color_7;
+    margin: 0 0 2em 0;
+    font-size: 28px;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    background-color: $color_4;
+    margin: 10px 0 0;
+  }
+
+  label {
+    display: block;
+    color: $color_8;
+    margin: 0 0 0.5em 0;
+  }
+
+  .slider {
+    width: 80%;
+    height: 2px;
+    -webkit-appearance: none;
+    background: $color_3;
+  }
+
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: $color_7;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .slider::-webkit-slider-thumb:hover {
+    background: $color_4;
+    transition-duration: 0.5s;
+  }
+
+  p {
+    color: $color_9;
+    margin: 0.5em 0 3em 0;
+  }
+
+  a {
+    display: block;
+    position: relative;
+    bottom: 0em;
+    color: $color_6;
+    text-decoration: none;
+  }
+}

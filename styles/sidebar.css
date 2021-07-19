@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap");
+/* background colors */
+/* main colors */
+/* text colors */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+aside {
+  padding: 2em;
+  background-color: #242424;
+  height: 80vh;
+  font-family: "Lora", serif;
+}
+
+aside h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  margin: 0 0 2em 0;
+  font-size: 28px;
+}
+
+aside h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 45px;
+  background-color: #39cec8;
+  margin: 10px 0 0;
+}
+
+aside label {
+  display: block;
+  color: #c3bfbc;
+  margin: 0 0 0.5em 0;
+}
+
+aside .slider {
+  width: 80%;
+  height: 2px;
+  -webkit-appearance: none;
+  background: #3b3b3b;
+}
+
+aside .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+aside .slider::-webkit-slider-thumb:hover {
+  background: #39cec8;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+aside p {
+  color: #a09d9a;
+  margin: 0.5em 0 3em 0;
+}
+
+aside a {
+  display: block;
+  position: relative;
+  bottom: 0em;
+  color: #3d99f5;
+  text-decoration: none;
+}
+/*# sourceMappingURL=sidebar.css.map */
